@@ -1,0 +1,26 @@
+[package]
+name = "zenjudge"
+version = "0.1.0"
+license = "GPL-3.0-only"
+default-run = "zenjudge"
+description = "Offline, Focus-Driven Local Algorithmic Judge"
+authors = ["ZenJudge"]
+edition = "2021"
+
+[lib]
+name = "zenjudge_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rusqlite = { version = "0.33", features = ["bundled", "backup"] }
+chrono = { version = "0.4", features = ["serde"] }
+flate2 = "1.0"
+
+[dev-dependencies]
+tauri = { version = "2", features = ["test"] }

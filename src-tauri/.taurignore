@@ -1,0 +1,15 @@
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.exe
+*.out
+*.o
+*.obj
+*.pdb
+*.ilk
+*.bin
+zenjudge_stage_*
+zenjudge_jail_*
+data/
+target/

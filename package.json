@@ -1,0 +1,45 @@
+{
+  "name": "zenjudge",
+  "private": true,
+  "version": "0.1.0",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "tauri dev",
+    "check": "tsc --noEmit",
+    "test": "node scripts/frontend-regressions.mjs && node scripts/editor-regressions.mjs && node scripts/workspace-regressions.mjs",
+    "desktop:build": "tauri build --debug --no-bundle",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "@tauri-apps/api": "^2.2.0",
+    "clsx": "^2.1.1",
+    "katex": "^0.19.1",
+    "lucide-react": "^1.16.0",
+    "monaco-editor": "^0.52.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "rehype-sanitize": "^6.0.0",
+    "remark-math": "^6.0.0",
+    "tailwind-merge": "^3.0.2"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.2.7",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.1"
+  },
+  "overrides": { "katex": "$katex" }
+}

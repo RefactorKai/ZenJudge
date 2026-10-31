@@ -1,0 +1,17 @@
+{
+  "title": "Rising Steps",
+  "slug": "demo-rising-steps",
+  "difficulty": "Easy",
+  "time_limit_ms": 1000,
+  "memory_limit_mb": 128,
+  "tags": [
+    "Array",
+    "Demo"
+  ],
+  "templates": {
+    "cpp": "#include <iostream>\n\nint main() {\n    // Read standard input and print your answer.\n    return 0;\n}\n",
+    "python": "import sys\n\ndef main():\n    data = sys.stdin.read().split()\n    # Compute and print your answer.\n\nif __name__ == \"__main__\":\n    main()\n"
+  },
+  "license": "GPL-3.0-only",
+  "provenance": "Original demonstration material written for ZenJudge; not imported from a problem platform."
+}

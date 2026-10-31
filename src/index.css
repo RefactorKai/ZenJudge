@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #222f44 #0c1017;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0c1017;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #222f44;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #324461;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Markdown prose styling */
+.prose-zen h1 {
+  @apply text-xl font-bold text-white mb-4 border-b border-zen-700/60 pb-2;
+}
+.prose-zen h2 {
+  @apply text-lg font-semibold text-zen-100 mt-4 mb-2;
+}
+.prose-zen h3 {
+  @apply text-sm font-semibold uppercase tracking-wider text-zen-300 mt-4 mb-2;
+}
+.prose-zen p {
+  @apply text-sm text-zen-200 leading-relaxed mb-3;
+}
+.prose-zen ul {
+  @apply list-disc list-inside text-sm text-zen-200 space-y-1 mb-3 pl-2;
+}
+.prose-zen ol {
+  @apply list-decimal list-inside text-sm text-zen-200 space-y-1 mb-3 pl-2;
+}
+.prose-zen code {
+  @apply bg-zen-800 text-sky-300 text-xs px-1.5 py-0.5 rounded font-mono border border-zen-700/50;
+}
+.prose-zen pre {
+  @apply bg-zen-950 p-3 rounded-lg border border-zen-700/60 font-mono text-xs text-zen-100 overflow-x-auto mb-3;
+}
+.prose-zen hr {
+  @apply border-zen-700/40 my-4;
+}

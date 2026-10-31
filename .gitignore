@@ -1,0 +1,42 @@
+# Private state, including SQLite journals and sidecars anywhere in the tree
+/data/
+# Legacy local packs have unverified redistribution rights. Keep them local.
+/problems/two-sum/
+/problems/valid-parentheses/
+/problems/climbing-stairs/
+/problems/coin-change/
+/problems/trapping-rain-water/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db.importing*
+*.log
+*.tmp
+*.bak
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Generated output and dependencies
+node_modules/
+dist/
+target/
+src-tauri/gen/
+coverage/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+# Local instructions, credentials, audits and disposable work
+.agents/
+.codex/
+.aws/
+.audit-work/
+outputs/
+private/
+secrets/
+.idea/
+.vscode/

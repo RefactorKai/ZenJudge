@@ -1,0 +1,24 @@
+# Git archives must omit private/local/generated files even if accidentally tracked.
+/data export-ignore
+/problems/two-sum export-ignore
+/problems/valid-parentheses export-ignore
+/problems/climbing-stairs export-ignore
+/problems/coin-change export-ignore
+/problems/trapping-rain-water export-ignore
+**/node_modules export-ignore
+/dist export-ignore
+**/target export-ignore
+/src-tauri/gen export-ignore
+/.agents export-ignore
+/.codex export-ignore
+/.aws export-ignore
+/.audit-work export-ignore
+/outputs export-ignore
+/private export-ignore
+/secrets export-ignore
+*.db* export-ignore
+*.sqlite* export-ignore
+*.log export-ignore
+*.pem export-ignore
+*.key export-ignore
+.env* export-ignore
